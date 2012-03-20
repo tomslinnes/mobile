@@ -1,4 +1,22 @@
 MobileApp::Application.routes.draw do
+
+
+	 match '/home', :to => 'pages#home'
+  match '/play',   :to => 'pages#play'
+  match '/win',    :to => 'pages#win'
+  match '/lost',   :to => 'pages#lost'
+  match '/tie',    :to => 'pages#tie'
+
+  get "pages/home"
+
+  get "pages/lost"
+
+  get "pages/play"
+
+  get "pages/tie"
+
+  get "pages/win"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
